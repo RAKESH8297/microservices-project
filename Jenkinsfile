@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -t RAKESH GADAMSETTI/frontend:latest ."
+                        sh "docker build -t rakeshgadamsetti/frontend:latest ."
                     }
                 }
             }
